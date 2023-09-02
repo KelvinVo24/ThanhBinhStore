@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/IMG/phin2.gif);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#header{
+    text-align: center;
+    background-color: black;
+    /* margin-top: -20px; */
+}
+
+#header li{
+    display: inline-block;
+    position: relative;
+}
+
+.list_child{
+    z-index: 2;
+    display: none;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 125px;
+    color: white;
+}
+
+.list_child li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    
+
+.nav li:hover .list_child {
+    display:block;
+    cursor: pointer;
+}
+
+.nav .list_child{
+    position: absolute;
+}
+
+
+#header li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+#search{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    width: 1520px;
+}
+
+.textbox input[type="text"]{
+    height: 50px;
+    width: 960px;
+    border-radius: 10px;
+    position: relative;
+    left: 30px;
+}
+
+.searchbtn{
+  height: 45px;  
+  width: 45px;
+  border-radius: 30px;
+  margin-left: 15px;
+  position: relative;
+  right: 42px;
+  background-color: black;
+  cursor: pointer;
+  animation: 0.5s;
+}
+.searchbtn:active {
+    transform:translateY(-10px);
+}
+.searchbtn:hover{
+    background-color:  wheat;
+}
+
+.cart{
+    font-size: 40px;
+    margin-right: 50px;
+    padding-top: 10px;
+    position: relative;
+    right: 10px;
+}
+
+.cart:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.signin{
+    margin-top: 5px;
+    width: 120px;
+    height: 37px;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    right: 20px;
+}
+.Acc{
+    text-decoration: none;
+    color: white;
+}
+
+#category{
+    text-align: center;
+    background-color: white;
+    width: 950px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* padding-left: 25px; */
+    background-image: url(/IMG/background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#category li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+#category li a{
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: 5px;
+}
+
+.cat2{
+    padding: 0;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53vh;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: -50px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .video-container {
+    display: flex;
+    width: 100%;
+} */
+
+.videoapple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: -50px;
+    /* margin-right: 380px; */
+}
+
+
+.smallbanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.smallbanner li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.smallbanner li a{
+    width: 100%;
+    height: 100%;
+}
+
+.smallbanner li img{
+    border-radius: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.button li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button li button{
+    text-decoration: none;
+    padding: 10px;
+    /* height: 100%;
+    align-items: center; */
+    display: block;
+    margin-right: 5px;
+    background: linear-gradient(to right, #027ed0, #077077);
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+
+.button li button:hover{
+    background: linear-gradient(to right, #1ed479, #077077);
+}
+
+.nav li:hover{
+    background-color: orange;
+}
+
+
+
+#category li:hover{
+    /* text-decoration: underline; */   
+    background: linear-gradient(to right, #022ea8, #1290b6);
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.signin:hover{
+    background-color: orange;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 1105px;
+    border-radius: 10px;
+    height: 260px;
+    
+}
+
+.item1{
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid black;
+    height: 219px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    margin: 2px;
+    background-color: #F2E9E9;
+}
+
+.sticker1{
+    position: absolute;
+    display: flex;
+    padding: 0px;
+    top: -30px;
+    right: -20px;
+}
+
+.item2{
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid black;
+    height: 219px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 2px;
+    padding: 10px;
+    background-color: #F2E9E9;
+}
+
+.name a{
+    text-decoration: none;
+    color: black;
+}
+
+.name a:hover{
+    color: blue;
+}
+.item3{
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid black;
+    height: 219px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 2px;
+    padding: 10px;
+    background-color: #F2E9E9;
+}
+
+
+.item4{
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid black;
+    height: 219px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 2px;
+    padding: 10px;
+    background-color: #F2E9E9;
+}
+.sticker2{
+    position: absolute;
+    display: flex ;
+    padding: 0px;
+    top: -30px;
+    right: -20px;
+}
+
+.saleproduct{
+    width: 125px;
+    height: 25px;
+    background-color: #F2E9E9;
+    margin-left: 13.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: large;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+.buynowbtn{
+    padding-top: 10px;
+}
+.buynowbtn button{
+    padding: 1px 5px 1px 5px; /*Trên, phải, dưới, trái */
+    background-color: #F2E9E9;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.buynowbtn button:hover{
+    background: rgb(255, 255, 255);
+}
+
+.item1:hover{
+    background: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.item2:hover{
+    background: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.item3:hover{
+    background: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.item4:hover{
+    background: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.laptopContainer{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 1100px;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.laptop1{
+    height: 258px;
+    width: 239px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F2E9E9;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.namelaptop1 a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.namelaptop1 a:hover{
+    color: blue;
+}
+
+.namelaptop1{
+    text-align: center;
+}
+
+.laptop1:hover{
+    background: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.laptopbanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.laptopbanner img{
+    border-radius: 10px;
+}
+
+.name{
+    text-align: center;
+}
+
+.contact{
+    width: 40px;
+    height: 44px;
+    border-radius: 100px;
+    background-color: white;
+    position: fixed;
+    top: 80%;
+    right: 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: linear-gradient(to right, #e9eeef,  #0fe3e3);
+    position: fixed;
+    top: 70%;
+    right: 15px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #eaebec, #ffffff);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2)
+}
+
+.phone:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #2fe2ef, #ffffff);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2)
+}
+
+
+
+.row{
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI';
+    font-size: 13px;
+    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+    background: #00483d;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+.boxcenter1{
+    margin-top: 20px;
+    display: flex;
+}
+
+.boxfooter1{
+    padding-top: 20px;
+    width: 16.6666%;
+}
+
+.boxfooter2{
+    padding-top: 20px;
+    width: 16.6666%;
+}
+
+.boxfooter3{
+    padding-top: 20px;
+    width: 16.6666%;
+}
+
+.boxfooter4{
+    padding-top: 20px;
+    width: 16.6666%;
+    text-align: center;
+}
+
+.boxfooter5{
+    padding-top: 20px;
+    width: 16.6666%;
+    text-align: center;
+}
+
+.boxfooter6{
+    padding-top: 20px;
+    width: 16.6666%;
+    text-align: center;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.colorc{
+    color: white;
+}
+
+
+.mrb10{
+    margin-bottom: 10px;
+}
+
+.ftop{
+    padding-top: 20px;
+}
+h4{
+    font-size: 15px;
+}
+.hotline{
+    display: inline-block;
+    font: Bold 18px/18px -apple-system,BlinkMacSystemFont,'Segoe UI';
+    color:#00483d;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.icon-list{
+    margin-top: 15px;
+    list-style:none ;
+}
+
+.bct{
+    margin-top: 15px;
+}
+
+.info1{
+    margin-top: 10px;
+}
+
+.BITC{
+    margin-top: 20px;
+}
+
+/* .audiobg{
+    display: none;
+} */
+
+
+.end_page1{
+    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 13px;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI';
+    border-radius: 10px;
+
+}
+
+.corevalue{
+    display: flex;
+    padding: 10px 60px;
+    margin: 20px 0;
+}
+
+
+.corevalue .item{
+    display: flex;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.core-icon{
+    font-size: 60px;
+    margin-right: 10px;
+}
+
+.corevalue .item .core-text{
+    font-size: 16px;
+    text-align: left;
+}
+
+.subscript{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 60px;
+}
+
+.icon-text{
+    display: flex;
+    margin-right: 30px;
+}
+
+.icon-text img{
+    margin-right: 30px;
+}
+
+.icon-text .text{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.icon-text .text h4{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.form{
+    display: flex;
+}
+
+.form .input{
+    background: #e6e6e6;
+    padding: 15px 10px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.form .input input{
+    width: 250px;
+    background: none;
+    border: none;
+}
+
+.form button{
+    background: #1f5142;
+    border-radius: 15px;
+    width: 50px;
+    font-size: 25px;
+    margin-left: -50px;
+}
+
+.form button:hover{
+    cursor: pointer;
+    background: #2cbe92
+}
+
+.Rick{
+    margin-top: 20px;
+}
