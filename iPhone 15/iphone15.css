@@ -1,0 +1,491 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI';
+    font-size: 13px;
+    background-color: #f4f4f4;
+    /* background-image: url(/rickroll_4k.jpg); */
+}
+/* Link product */
+.link-product p a{
+    color: black;
+    text-decoration: none;
+    min-width: 1200px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.link-product{
+    min-width: 1200px;
+    width: 1200px;
+    margin: 20px auto 20px auto;
+}
+
+.link-product span a{
+    color: #009981;
+}
+/* iPhone container */
+.iphone-container{
+    min-width: 1200px;
+    margin: auto;
+    width: 1200px;  
+}
+
+.top-product{
+    display: flex;
+    margin-bottom: 15px;
+
+}
+
+.details-product{
+    display: flex;
+}
+
+
+.image-container .slide{
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+
+.image-container .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container .buttons button{
+    margin: 20px 5px;
+    padding: 5px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 5px;
+    border: none;
+    border: 1px solid rgb(207, 207, 206);
+}
+
+.image-container .buttons button:hover{
+    background-color: #ffffff;
+}
+
+    
+
+/* product price */
+.product-price strong{
+    font-size: 25px;
+    color: red;
+}
+
+.product-price i{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.product-freeship{
+    background-color: #009981;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-freeship i{
+    font-size: 15px;
+}
+
+/* Product information */
+
+.product-information{
+    width: 480px;
+    margin-left: 15px;
+}
+
+.product-label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.product-storage .options{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options .item{
+    border-radius: 5px;
+    display: block;
+    width: 20%;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 5px;
+}
+
+.options .item:hover{
+    background: #f1eeee8e;
+}
+
+
+
+.options .renew{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 0px ;
+    margin-bottom: 15px;
+}
+
+.promotion ul{
+    list-style: none;
+}
+
+.promotion ul li a{
+    text-decoration: none;
+    color: black;
+}
+.promotion ul li{
+    margin-bottom: 5px;
+}
+.promotion strong{
+    color: green;
+    font-size: 14px;
+
+}
+
+.promotion .KM{
+    margin-top: 5px;
+    background-color: orange;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+}
+
+
+.promotion ul li a:hover{
+    color: orange;
+}
+
+
+/* Các nút mua hàng */
+.product-do strong{
+    display: block;
+    font-size: 15px;
+}
+
+.product-do span{
+    font-size: 11px;
+}
+
+.product-do{
+    display: flex;
+    width: 100%;
+}
+
+.product-do button {
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 11px;
+
+}
+
+.product-do button a{
+    color: white;
+    text-decoration: none;
+}
+
+.product-do .btn-Buy{
+    background: linear-gradient(45deg, red, blue);
+    width: 35%;
+}
+
+.product-do .btn-Buy:hover{
+    background: linear-gradient(45deg, blue, red);
+}
+
+.product-do .btn-Tragop{
+    background:linear-gradient(45deg, green, rgb(123, 109, 109));
+    width: 35%;
+}
+
+.product-do .btn-Tragop:hover{
+    background:linear-gradient(45deg, rgb(123, 109, 109), green);
+}
+.product-do .btn-Addtocart{
+    background: linear-gradient(135deg, orange 60%, cyan);
+    width: 30%; 
+}
+
+.product-do .btn-Addtocart:hover{
+    background: linear-gradient(135deg, cyan, orange 60%);
+}
+
+.product-do .btn-Addtocart strong{
+    margin-bottom: 5px;
+}
+
+.product-do .btn-Addtocart i{
+    font-size: 25px;
+}
+
+/* Promotion 2nd */
+
+.promotion-2nd{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.promotion-2nd ul{
+    list-style: none;
+}
+
+.promotion-2nd ul li a{
+    text-decoration: none;
+    color: black;
+}
+.promotion-2nd ul li{
+    margin-bottom: 5px;
+}
+
+.promotion-2nd ul li a:hover{
+    color: orange;
+}
+
+.promotion-2nd strong{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.promotion-2nd ul li i{
+    font-size: 12px;
+}
+
+
+/* Product shop */
+.product-shop{
+    min-width: 280px;
+    max-width: 280px;
+    margin-left: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 11px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.product-shop h4{
+    text-align: center;
+}
+
+
+.product-shop-warranty p{
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-shop-warranty select{
+    margin: auto;
+    display: flex;
+}
+
+/* Địa chỉ */
+
+.product-city{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-city select{
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px;
+    border-radius: 4px;
+}
+
+.product-store{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px
+}
+
+/* Ưu đãi */
+.iphone-container-2{
+    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.combo-hotdeal-child{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.main-item{
+   width: 300px;
+}
+.main-item .img{
+    width: 150px;
+    margin: auto;
+}
+
+.main-item img{
+    width: 100%;
+}
+
+
+
+
+
+/* Symbol */
+.add-symbol{
+    font-weight: bold;
+    font-size: 20px;
+
+    display: block;
+    padding: 130px 20px 0 20px;
+}
+
+.info a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.info{
+    text-align: center;
+}
+
+.main-item span{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main-item strong{
+    color: red;
+    font-size: 20px;
+
+}
+
+.main-item button{
+    background-color: rgb(128, 28, 28);
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-item button:hover{
+    background-color: rgb(237, 23, 23);
+}
+
+/* Thông tin & thông số sản phẩm */
+
+.iphone-container-3{
+    margin: auto;
+    min-width: 1200px;
+    width: 1200px;
+    display: flex;
+
+}
+
+.container-left{
+    width: 66%;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+
+.container-left img{
+    width: 760px;
+    height: 113px;
+}
+
+.img-iphone img{
+    height: 100%;
+}
+
+.container-left p{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* Container-right  */
+.container-right{
+    width: 30%;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #00000029;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.container-right .img-iphone img{
+    width: 100%;
+}
+
+.container-right .specs{
+    justify-content: center;
+    display: flex;
+}
+
+.specs button{
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px ;
+}
+
+.container-right ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.container-right ul li{
+    padding-bottom: 10px;
+}
+
+.specs button:hover{
+    background-color: #c0c8c7;
+}
+
+
+
+
+
+

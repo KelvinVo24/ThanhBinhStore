@@ -1,0 +1,24 @@
+.col-lg-5 p{
+    text-align: justify;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.img-leader img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.about-leadership{
+    width: 769px;
+    margin: 0 auto;
+}
+
+.about-leadership span{
+    text-align: justify;
+}
+

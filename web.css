@@ -4,25 +4,49 @@
 }
 
 body{
-    background-image: url(/IMG/phin2.gif);
+    background-color: #f4f4f4;
+    /* background-image: linear-gradient(
+        to right, 
+        rgba(0,0,0, 0.5),
+        rgba((0,0,0, 0.5)   
+        ),
+        url(/IMG/18731150.jpg)
+    ); */
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
 #header{
     text-align: center;
     background-color: black;
+    /* position: fixed;
+    width: 100%;
+    z-index: 1; */
     /* margin-top: -20px; */
 }
 
 #header li{
-    display: inline-block;
-    position: relative;
+    display: inline-block;  
+    /* position: relative; */
 }
 
 .list_child{
-    z-index: 2;
+    z-index: 3;
     display: none;
     background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
@@ -57,13 +81,24 @@ body{
     height: 100%;
 }
 
+.logo{
+    margin: 0 auto;
+}
+
 #search{
     display: flex;
     justify-content: space-around;
-    padding: 10px 20px;
+    padding: 10px 0px;
     width: 100%;
     height: 100%;
-    width: 1520px;
+    /* width: 1520px; */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(19,25,33);
+    margin: auto;
+    align-items: center;
 }
 
 .textbox input[type="text"]{
@@ -72,6 +107,8 @@ body{
     border-radius: 10px;
     position: relative;
     left: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .searchbtn{
@@ -95,7 +132,7 @@ body{
 .cart{
     font-size: 40px;
     margin-right: 50px;
-    padding-top: 10px;
+    /* padding-top: 5px; */
     position: relative;
     right: 10px;
 }
@@ -105,15 +142,17 @@ body{
 }
 
 .signin{
-    margin-top: 5px;
-    width: 120px;
-    height: 37px;
-    padding: 5px;
+    height: 50px;
+    padding: 5px 10px;
     background-color: black;
     text-align: center;
     border-radius: 10px;
     position: relative;
     right: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Acc{
     text-decoration: none;
@@ -122,15 +161,11 @@ body{
 
 #category{
     text-align: center;
-    background-color: white;
-    width: 950px;
+    background-color: black;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    /* padding-left: 25px; */
-    background-image: url(/IMG/background.jpg);
     background-size: cover;
     background-position: center;
+
 
 }
 
@@ -144,10 +179,10 @@ body{
 }
 
 #category li a{
-    font-size: 30px;
+    font-size: 24px;
     text-decoration: none;
     line-height: 46px;
-    padding: 30px;
+    padding: 25px;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -159,34 +194,121 @@ body{
     padding: 0;
 }
 
-.banner{
+.latest-gift-line{
+    margin-left: 140px;
+    padding-bottom: 14px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.line{
+    margin: 20px 0px;
+}
+
+.line h2{
+    color: #e30000;
+}
+
+.line h2 span{
+    color: #6e6e73;
+}
+
+.bannerwrap{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 53vh;
-    width: 50%;
-    margin: auto;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-top: -50px;
-    background-size: cover;
-    background-position: center;
+    margin: 0 auto ;
 }
 
-/* .video-container {
+.banner{
+    position: relative;
+    margin: 0 auto;
     display: flex;
+    transform: scale3d(1.01,1.01,1.01);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.banner .text{
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    line-height: 35px;
+}
+
+.banner .img img{
+    border-radius: 20px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+}
+
+.banner:hover{
+    transform: scale(1);
+}
+
+
+
+.wrappervideo{
+    position: relative;
     width: 100%;
-} */
+    background-color: black;
+    padding: 30px 0px;
+}
+
+.wrappervideo .text{
+    /* position: absolute; */
+    color: white;
+    color: #9D988F;
+    text-align: center;
+    width: 100%;
+    animation: move-up 1s ease-in-out;
+}
+
+.wrappervideo .buy-btn{
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: -50px;
+    animation: move-up 1s ease-in-out;
+}
+
+.wrappervideo .buy-btn button{
+    background-color: #0071E3;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+}
+
+.wrappervideo .buy-btn button:hover{
+    opacity: 0.8;
+}
+
 
 .videoapple{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     margin: auto;
-    margin-top: -50px;
-    /* margin-right: 380px; */
+    /* margin-top: 20px; */
+    position: relative;
+    animation: move-up 1s ease-in-out;
 }
+
+@keyframes move-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 
 .smallbanner{
@@ -229,8 +351,6 @@ body{
 .button li button{
     text-decoration: none;
     padding: 10px;
-    /* height: 100%;
-    align-items: center; */
     display: block;
     margin-right: 5px;
     background: linear-gradient(to right, #027ed0, #077077);
@@ -250,8 +370,7 @@ body{
 
 
 #category li:hover{
-    /* text-decoration: underline; */   
-    background: linear-gradient(to right, #022ea8, #1290b6);
+    background: linear-gradient(to right, #1c1c1c, #383838);
     border-radius: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
@@ -263,32 +382,95 @@ body{
 
 .container{
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255, 0.8);
-    width: 1105px;
+    width: 1200px;
     border-radius: 10px;
-    height: 260px;
+    height: 520px;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     
 }
 
-.item1{
+.phone-item{
     color: #333;
     margin: 0;
     padding: 0;
     position: relative;
-    border: 1px solid black;
-    height: 219px;
+    /* height: 259px; */
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
     display: flex; 
     justify-content: center; 
     align-items: center;
-    padding: 10px;
-    margin: 2px;
-    background-color: #F2E9E9;
+    padding: 20px 40px;
+    margin: 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 11px;
+}
+
+.phone-item img{
+    transition-duration: 0.5s;
+    padding-bottom: 15px;
+}
+
+
+.phone-item .img img{
+    height: 150px;
+}
+
+.phone-item .img img:hover {
+    transform: scale(1.1);
+        /* Safari & Google Chrome */
+        -webkit-transform: scale(1.1);
+        /* Mozilla Firefox */
+        -moz-transform: scale(1.1); 
+        /* Opera */
+        -o-transform: scale(1.1);
+        /* IE 9 */
+        -ms-transform: scale(1.1);
+    cursor: pointer; 
+}
+
+.phone-item .img > a{
+    display: flex;
+    justify-content: center;
+}
+
+.laptop1 a{
+    justify-content: center;
+    display: flex
+}   
+
+.laptop1 img{
+    transition-duration: 0.5s;
+}
+
+
+.price{
+    text-align: center;
+    line-height: 24px;
+}
+
+.buynowbtn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.laptop1 .img img:hover{
+    transform: scale(1.2);
+    /* Safari & Google Chrome */
+    -webkit-transform: scale(1.2);
+    /* Mozilla Firefox */
+    -moz-transform: scale(1.2); 
+    /* Opera */
+    -o-transform: scale(1.2);
+    /* IE 9 */
+    -ms-transform: scale(1.2);
+    cursor: pointer; 
 }
 
 .sticker1{
@@ -299,68 +481,20 @@ body{
     right: -20px;
 }
 
-.item2{
-    color: #333;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    border: 1px solid black;
-    height: 219px;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    margin: 2px;
-    padding: 10px;
-    background-color: #F2E9E9;
-}
+
 
 .name a{
     text-decoration: none;
     color: black;
+    line-height: 24px;
 }
 
 .name a:hover{
     color: blue;
 }
-.item3{
-    color: #333;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    border: 1px solid black;
-    height: 219px;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    margin: 2px;
-    padding: 10px;
-    background-color: #F2E9E9;
-}
 
 
-.item4{
-    color: #333;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    border: 1px solid black;
-    height: 219px;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    margin: 2px;
-    padding: 10px;
-    background-color: #F2E9E9;
-}
+
 .sticker2{
     position: absolute;
     display: flex ;
@@ -369,94 +503,92 @@ body{
     right: -20px;
 }
 
+.parent-saleproduct{
+    width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .saleproduct{
-    width: 125px;
+    width: 100px;
     height: 25px;
-    background-color: #F2E9E9;
-    margin-left: 13.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border: solid 1px black;
+    /* margin: 0 auto; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 11px;
     border-radius: 10px;
     font-size: large;
     background-size: cover;
     background-position: center;
     color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 .buynowbtn{
     padding-top: 10px;
+
+}
+
+.buynowbtn{
+    width: 100%;
 }
 .buynowbtn button{
     padding: 1px 5px 1px 5px; /*Trên, phải, dưới, trái */
-    background-color: #F2E9E9;
+    background-color: #e8f1f1;
     border-radius: 5px;
     cursor: pointer;
-
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 11px;
+    border: none;   
 }
 
 .buynowbtn button:hover{
     background: rgb(255, 255, 255);
 }
 
-.item1:hover{
-    background: rgb(255, 255, 255);
+.phone-item:hover{
+    background: rgb(255, 254, 254);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.item2:hover{
-    background: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
-.item3:hover{
-    background: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.item4:hover{
-    background: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
 .laptopContainer{
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255, 0.8);
-    width: 1100px;
+    width: 1200px;
     border-radius: 10px;
     height: 300px;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
 }
 
 .laptop1{
-    height: 258px;
-    width: 239px;
-    padding: 0;
-    margin: 0;
     position: relative;
-    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 11px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #F2E9E9;
+    background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px 40px;
     text-decoration: none;
-    margin: 5px;
+    margin: 10px 5px;
     cursor: pointer;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .namelaptop1 a{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    height: 27px;
 }
 
 .namelaptop1 a:hover{
@@ -468,7 +600,7 @@ body{
 }
 
 .laptop1:hover{
-    background: white;
+    background: rgb(255, 250, 250);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -476,8 +608,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 100px;
 }
 
 .laptopbanner img{
@@ -500,6 +632,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .phone{
@@ -514,6 +647,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .contact:hover{
@@ -532,7 +666,7 @@ body{
 
 
 
-.row{
+.row-footer{
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI';
     font-size: 13px;
     min-width: 1200px;
@@ -552,38 +686,11 @@ body{
     display: flex;
 }
 
-.boxfooter1{
+.boxfooter{
     padding-top: 20px;
     width: 16.6666%;
 }
 
-.boxfooter2{
-    padding-top: 20px;
-    width: 16.6666%;
-}
-
-.boxfooter3{
-    padding-top: 20px;
-    width: 16.6666%;
-}
-
-.boxfooter4{
-    padding-top: 20px;
-    width: 16.6666%;
-    text-align: center;
-}
-
-.boxfooter5{
-    padding-top: 20px;
-    width: 16.6666%;
-    text-align: center;
-}
-
-.boxfooter6{
-    padding-top: 20px;
-    width: 16.6666%;
-    text-align: center;
-}
 
 .textcenter{
     text-align: center;
@@ -601,9 +708,11 @@ body{
 .ftop{
     padding-top: 20px;
 }
+
 h4{
     font-size: 15px;
 }
+
 .hotline{
     display: inline-block;
     font: Bold 18px/18px -apple-system,BlinkMacSystemFont,'Segoe UI';
@@ -645,7 +754,6 @@ h4{
     padding: 0;
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI';
     border-radius: 10px;
-
 }
 
 .corevalue{
@@ -703,18 +811,19 @@ h4{
     display: flex;
 }
 
-.form .input{
+.form input {
     background: #e6e6e6;
     padding: 15px 10px;
     width: 300px;
     border-radius: 15px;
+    border: none;
 }
 
-.form .input input{
+/* .form .input input{
     width: 250px;
     background: none;
     border: none;
-}
+} */
 
 .form button{
     background: #1f5142;
@@ -731,4 +840,12 @@ h4{
 
 .Rick{
     margin-top: 20px;
+}
+
+.displaytime{
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
 }
