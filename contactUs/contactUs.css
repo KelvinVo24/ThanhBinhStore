@@ -281,8 +281,6 @@ h4{
 }
 
 
-/* Header */
-
 #category li:hover{
     background: linear-gradient(to right, #1c1c1c, #383838);
     border-radius: 10px;
@@ -330,6 +328,12 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     
 
@@ -468,7 +472,6 @@ body::-webkit-scrollbar-thumb{
 .signin:hover{
     background-color: orange;
 }
-
 
 
 /* responsive */

@@ -261,6 +261,7 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     width: 100%;
     animation: move-up 1s ease-in-out;
+    /* user-select: none; */
 }
 
 .wrappervideo .buy-btn{
@@ -303,6 +304,8 @@ body::-webkit-scrollbar-thumb{
         transform: translateY(50px);
         opacity: 0;
     }
+
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -672,7 +675,7 @@ body::-webkit-scrollbar-thumb{
     min-width: 1200px;
     width: 1200px;
     margin: 0 auto;
-    background: #00483d;
+    background: black;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 10px;
@@ -826,7 +829,7 @@ h4{
 } */
 
 .form button{
-    background: #1f5142;
+    background: black;
     border-radius: 15px;
     width: 50px;
     font-size: 25px;
